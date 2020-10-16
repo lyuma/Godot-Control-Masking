@@ -4,6 +4,10 @@ Texture masking allows one node to mask another node or set of nodes with a text
 
 This is similar to a stencil, but does not actually restrict rendering.
 
+**NOTE**: This effect **will not show in editor**. You must run to see the mask in effect.
+
+To fix this limitation, this effect would have to be migrated to a tool script.
+
 To use texture masking:
 
 1. first create a `ShaderMaterial` (or multiple materials).
@@ -22,7 +26,7 @@ This is an area may wish to continue exploring in the future.
 
 Another feature to consider adding is an inverse mask: hiding within the rect instead of outside.
 
-# (from demo project) GUI Input Mapping
+## (from demo project) GUI Input Mapping
 
 A demo showing how to build an input key remapping screen.
 
@@ -36,4 +40,6 @@ Renderer: GLES 2
 
 ## Screenshots
 
-![Screenshot](screenshots/input_mapping.png)
+![Screenshot](screenshots/masked_ui_example.png)
+
+![Screenshot](screenshots/mask_example.png)
